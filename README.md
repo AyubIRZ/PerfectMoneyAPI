@@ -124,4 +124,4 @@ If you have found a bug or you have a usage issue, please use the [GitHub issue 
 License
 =======
 
-This package is published under the MIT License (MIT). Please see [License File](https://github.com/AyubIRZ/PerfectMoneyAPI/blob/master/LICENSE.md) for more information.
+This package is published under the MIT License (MIT). Please see [License File](https://github.com/AyubIRZ/PerfectMoneyAPI/blob/master/LICENSE) for more information.
