@@ -100,7 +100,7 @@ If you want to transfer amounts of money(currency) to any other PerfectMoney acc
     
     $PMeVoucher = $pm->createEV($payerAccount, $amount); // An array of E-Voucher data(Payer_Account, PAYMENT_AMOUNT, PAYMENT_BATCH_NUM, VOUCHER_NUM, VOUCHER_CODE, VOUCHER_AMOUNT) will return for a valid and successful transaction. If any error happen, an array with one item with the key "ERROR" will return.
     
-    return json_encode($PMtransfer);
+    return json_encode($PMeVoucher);
     
 The returned array is as below:
 
