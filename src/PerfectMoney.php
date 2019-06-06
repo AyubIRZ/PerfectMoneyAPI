@@ -38,7 +38,7 @@ class PerfectMoneyAPI
     public function getAccountName($account)
     {
         // trying to open URL to process PerfectMoney getAccountName request
-        $data = file_get_contents("https://perfectmoney.is/acct/balance.asp?AccountID={$this->AccountID}&PassPhrase={$this->PassPhrase}");
+        $data = file_get_contents("https://perfectmoney.is/acct/acc_name.asp?AccountID={$this->AccountID}&PassPhrase={$this->PassPhrase}&Account={$account}");
 
         if($data == 'ERROR: Can not login with passed AccountID and PassPhrase'){
 
