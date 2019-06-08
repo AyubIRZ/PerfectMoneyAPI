@@ -137,4 +137,24 @@ class PerfectMoneyAPI
 
         return $array;
     }
+
+    public function transferEV($toAccount, $EVnumber, $EVactivationCode)
+    {
+        // trying to open URL to process PerfectMoney Balance request
+        $data = file_get_contents("https://perfectmoney.is/acct/ev_activate.asp?AccountID={$this->AccountID}&PassPhrase={$this->PassPhrase}&Payee_Account={$toAccount}&ev_number={$EVnumber}&ev_code={$EVactivationCode}");
+
+        // searching for hidden fields
+        if (!preg_match_all("/<input name='(.*)' type='hidden' value='(.*)'>/", $data, $result, PREG_SET_ORDER)) {
+            return false;
+        }
+
+        // putting data to array
+        $array = [];
+
+        foreach ($result as $item) {
+            $array[$item[1]] = $item[2];
+        }
+
+        return $array;
+    }
 }
