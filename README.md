@@ -121,6 +121,8 @@ Support
 
 If you have found a bug or you have a usage issue, please use the [GitHub issue tracker](https://github.com/AyubIRZ/PerfectMoneyAPI/issues).
 
+Or email me at: [ayubirazeh@gmail.com](mailto:ayubirazeh@gmail.com)
+
 License
 =======
 
